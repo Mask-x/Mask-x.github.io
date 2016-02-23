@@ -272,21 +272,96 @@
 
       
         
-          
-            <h1 id="String的常用方法"><a href="#String的常用方法" class="headerlink" title="String的常用方法~"></a>String的常用方法~</h1><h2 id="String-测量长度的方法length（）"><a href="#String-测量长度的方法length（）" class="headerlink" title="String 测量长度的方法length（）"></a>String 测量长度的方法length（）</h2><p>String类型对象的length()方法返回的int具体数值<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.length());</span><br><span class="line">        <span class="comment">//string的测长度方法length（）</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+          <h1 id="String的常用方法"><a href="#String的常用方法" class="headerlink" title="String的常用方法~"></a>String的常用方法~</h1><h2 id="String-测量长度的方法length（）"><a href="#String-测量长度的方法length（）" class="headerlink" title="String 测量长度的方法length（）"></a>String 测量长度的方法length（）</h2><p>String类型对象的length()方法返回的int具体数值<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.length());</span><br><span class="line">        <span class="comment">//string的测长度方法length（）</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="String-字符串转换为char-数组方法toCharArray（）"><a href="#String-字符串转换为char-数组方法toCharArray（）" class="headerlink" title="String 字符串转换为char 数组方法toCharArray（）"></a>String 字符串转换为char 数组方法toCharArray（）</h2><p>String字符串转换为char类型数组（我对数组没任何好感，因为我学的不好2333）<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        <span class="built_in">char</span>  data[] =  <span class="built_in">str</span>.toCharArray();</span><br><span class="line">        System.out.<span class="built_in">print</span>(data);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//string的字符串转换为char类型数组方法toCharArray（）</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="String-从字符串里面提取指定位置字符方法charAt（）"><a href="#String-从字符串里面提取指定位置字符方法charAt（）" class="headerlink" title="String 从字符串里面提取指定位置字符方法charAt（）"></a>String 从字符串里面提取指定位置字符方法charAt（）</h2><p>charAt（）方法中放入int类型数字 从0开始算<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.charAt(<span class="number">0</span>));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//string从字符串中抽取指定位置字符方法charAt（）</span></span><br><span class="line">        <span class="comment">//结果H</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="String-字符串与byte数组转换getBytes（）"><a href="#String-字符串与byte数组转换getBytes（）" class="headerlink" title="String 字符串与byte数组转换getBytes（）"></a>String 字符串与byte数组转换getBytes（）</h2><p>从String类型转化为byte字节数组（我靠，我看这个的时候顺便看了foreach遍历，虽然我还是不太明白，还有intellij的live template怎么玩）<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        <span class="built_in">byte</span> bytes[] = <span class="built_in">str</span>.getBytes();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;bytes.length;i++)&#123;</span><br><span class="line">            System.out.<span class="built_in">print</span>(bytes[i] + <span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//string字符串转化为byte类型数组方法getBytes（）</span></span><br><span class="line">        <span class="comment">//显示结果 72	101	108	108	111	32	67	104	105	99	107	101	110	</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="过滤String字符串中存在的字符indexOf（）"><a href="#过滤String字符串中存在的字符indexOf（）" class="headerlink" title="过滤String字符串中存在的字符indexOf（）"></a>过滤String字符串中存在的字符indexOf（）</h2><p>这个方法indexOf()如果存在就输出位置，只输出最近的那个，也是从0开始数~ 如果不存在输出-1<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.indexOf(<span class="string">"H"</span>));</span><br><span class="line">        <span class="comment">//查询字符串中是否存在所要字符indexOf（）</span></span><br><span class="line">        <span class="comment">//结果0</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="去掉字符串中前后空格方法trim（）"><a href="#去掉字符串中前后空格方法trim（）" class="headerlink" title="去掉字符串中前后空格方法trim（）"></a>去掉字符串中前后空格方法trim（）</h2><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"    Hello Chicken    "</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.<span class="built_in">trim</span>());</span><br><span class="line">        <span class="comment">//去除字符串中前后空格方法trim（）</span></span><br><span class="line">        <span class="comment">//结果Hello Chicken</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="从字符串中截取一段字符串方法subString（）"><a href="#从字符串中截取一段字符串方法subString（）" class="headerlink" title="从字符串中截取一段字符串方法subString（）"></a>从字符串中截取一段字符串方法subString（）</h2><p>subString（i）截取的值为从i往后的值 subString（i，j）截取的值为i到j之间的值 长度为j-i<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.substring(<span class="number">6</span>));</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.substring(<span class="number">3</span>,<span class="number">8</span>));</span><br><span class="line">        <span class="comment">//从字符串中截取子字符串方法（）</span></span><br><span class="line">        <span class="comment">//结果Chicken   lo　ｃｈ</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="大小写转换方法toLowerCase（）-toUpperCase（）"><a href="#大小写转换方法toLowerCase（）-toUpperCase（）" class="headerlink" title="大小写转换方法toLowerCase（） toUpperCase（）"></a>大小写转换方法toLowerCase（） toUpperCase（）</h2><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.toLowerCase());</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.toUpperCase());</span><br><span class="line">        <span class="comment">//大小写转换方法   小写转换toLowerCase（） 大写转换toUpperCase（）</span></span><br><span class="line">        <span class="comment">//结果hello chickenHELLO CHICKEN</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="判断字符串开头结尾字符startsWith（）-endsWith（）"><a href="#判断字符串开头结尾字符startsWith（）-endsWith（）" class="headerlink" title="判断字符串开头结尾字符startsWith（） endsWith（）"></a>判断字符串开头结尾字符startsWith（） endsWith（）</h2><p>startsWith（）可以直接判断开头是什么startsWith（“想测的开头”） 或者自己决定从哪开始算开头再往后判断startsWith（“想测的开头”，int）也是从0开始算~<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.endsWith(<span class="string">"n"</span>)+<span class="string">" "</span>);</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.startsWith(<span class="string">"H"</span>)+<span class="string">" "</span>);</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.startsWith(<span class="string">"H"</span>,<span class="number">1</span>));</span><br><span class="line">        <span class="comment">//判断字符串开头结尾字符startsWith（） endsWith（）</span></span><br><span class="line">        <span class="comment">//结果true true false</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="替换字符串中字符方法replace（）"><a href="#替换字符串中字符方法replace（）" class="headerlink" title="替换字符串中字符方法replace（）"></a>替换字符串中字符方法replace（）</h2><p>replace（“原字符串”，“你想换的字符串”） 是都换掉哦~<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line"></span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.replace(<span class="string">"Chicken"</span>,<span class="string">"World"</span>)+<span class="string">"  "</span>);</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.replace(<span class="string">"l"</span>,<span class="string">"x"</span>));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//替换字符方法replace()</span></span><br><span class="line">        <span class="comment">//结果Hello World  Hexxo Chicken</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>啊~如果有人发现这其实是极客学院的视频内容，以后有String的内容就扔到这里面吧</p>
-</blockquote>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/23/Java基础之string/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
 
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/02/21/今天做了什么/" itemprop="url">
+                  今天做了什么
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-21T16:32:22+08:00" content="2016-02-21">
+              2016-02-21
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>。。。。。。。我也并不清楚我今天做了什么。。。。。。。<br>因为这个博客不是技术性博客，我随便写也没关系吧~（反正没人看~嘿嘿）<br>早上爬起来10：30 ，晚上睡觉每超12点一小时第二天就要在6点的基础上x2小时推迟醒来时间，醒来后还浑身难受。私以为是非常不划算的事（然而我就是想12点以后不睡觉2333）<br>中午去吃饭发现卖盒饭的大叔还没上班。。。整个实验对面街上就那家盒饭能让我留恋，其他的盒饭根本没法比~<br>下午被叫去打lol。。。烬真的很厉害。。。但是一突脸就GG。 刚才抽空在看怎么markdown语法怎么写文章。。。然而一抽风在知乎上找到了怎么加音乐，简直是太棒了~（音乐播放器我只认网易云~）<br>文章这么凌乱，我自己看着都感觉很难受啊23333 晚上去学习好了~去看看java和设计模式，再刷一刷面试题。嗯，就这么愉快的决定了。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=35090300&auto=0&height=66"></iframe>
           
         
       
@@ -348,7 +423,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
