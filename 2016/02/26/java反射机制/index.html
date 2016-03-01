@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -57,15 +57,40 @@
 
 
 
-<meta name="description" content="too young too simple">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一个窝">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="什么是反射（就是反弹呗~）反射机制背景概述
+1    Reflection反射，是java被视为动态（或准动态）语言的一个关键性质
+2 反射机制指的是程序在运行时能够获取任何类的内部所有信息
+
+反射机制实现功能概述
+1 只要给定类的全名，即可通过反射获取类的所有信息
+2 反射可以在程序运行时获取任意一个对象所属的类对象
+3 在运行时可以获取到类中所有属性对象，并对其操作（包括私有属性）
+4 在运行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java反射机制">
+<meta property="og:url" content="http://yoursite.com/2016/02/26/java反射机制/index.html">
 <meta property="og:site_name" content="一个窝">
-<meta property="og:description" content="too young too simple">
+<meta property="og:description" content="什么是反射（就是反弹呗~）反射机制背景概述
+1    Reflection反射，是java被视为动态（或准动态）语言的一个关键性质
+2 反射机制指的是程序在运行时能够获取任何类的内部所有信息
+
+反射机制实现功能概述
+1 只要给定类的全名，即可通过反射获取类的所有信息
+2 反射可以在程序运行时获取任意一个对象所属的类对象
+3 在运行时可以获取到类中所有属性对象，并对其操作（包括私有属性）
+4 在运行">
+<meta property="og:updated_time" content="2016-03-01T02:40:32.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个窝">
-<meta name="twitter:description" content="too young too simple">
+<meta name="twitter:title" content="Java反射机制">
+<meta name="twitter:description" content="什么是反射（就是反弹呗~）反射机制背景概述
+1    Reflection反射，是java被视为动态（或准动态）语言的一个关键性质
+2 反射机制指的是程序在运行时能够获取任何类的内部所有信息
+
+反射机制实现功能概述
+1 只要给定类的全名，即可通过反射获取类的所有信息
+2 反射可以在程序运行时获取任意一个对象所属的类对象
+3 在运行时可以获取到类中所有属性对象，并对其操作（包括私有属性）
+4 在运行">
 
 
 
@@ -83,7 +108,7 @@
   };
 </script>
 
-  <title> 一个窝 </title>
+  <title> Java反射机制 | 一个窝 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -102,9 +127,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -193,24 +216,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -230,10 +238,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/02/26/java反射机制/" itemprop="url">
-                  Java反射机制
-                </a>
+                Java反射机制
               
             
           </h1>
@@ -271,9 +276,7 @@
       
 
       
-        
-          
-            <h1 id="什么是反射（就是反弹呗-）"><a href="#什么是反射（就是反弹呗-）" class="headerlink" title="什么是反射（就是反弹呗~）"></a>什么是反射（就是反弹呗~）</h1><h2 id="反射机制背景概述"><a href="#反射机制背景概述" class="headerlink" title="反射机制背景概述"></a>反射机制背景概述</h2><ul>
+        <h1 id="什么是反射（就是反弹呗-）"><a href="#什么是反射（就是反弹呗-）" class="headerlink" title="什么是反射（就是反弹呗~）"></a>什么是反射（就是反弹呗~）</h1><h2 id="反射机制背景概述"><a href="#反射机制背景概述" class="headerlink" title="反射机制背景概述"></a>反射机制背景概述</h2><ul>
 <li>1    Reflection反射，是java被视为动态（或准动态）语言的一个关键性质</li>
 <li>2 反射机制指的是程序在运行时能够获取任何类的内部所有信息</li>
 </ul>
@@ -313,200 +316,45 @@
 <li>5 setAccessible(true)启用/禁用访问控制权限 （这个坑我会填上的！不要怕！）</li>
 </ul>
 
-          
-        
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/23/Java基础之string/" itemprop="url">
-                  Java基础之string
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-23T21:26:28+08:00" content="2016-02-23">
-              2016-02-23
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
+            <a href="/tags/Java/" rel="tag">#Java</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h1 id="String的常用方法"><a href="#String的常用方法" class="headerlink" title="String的常用方法~"></a>String的常用方法~</h1><h2 id="String-测量长度的方法length（）"><a href="#String-测量长度的方法length（）" class="headerlink" title="String 测量长度的方法length（）"></a>String 测量长度的方法length（）</h2><p>String类型对象的length()方法返回的int具体数值<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        System.out.<span class="built_in">print</span>(<span class="built_in">str</span>.length());</span><br><span class="line">        <span class="comment">//string的测长度方法length（）</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="String-字符串转换为char-数组方法toCharArray（）"><a href="#String-字符串转换为char-数组方法toCharArray（）" class="headerlink" title="String 字符串转换为char 数组方法toCharArray（）"></a>String 字符串转换为char 数组方法toCharArray（）</h2><p>String字符串转换为char类型数组（我对数组没任何好感，因为我学的不好2333）<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> class Main &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) &#123;</span><br><span class="line">        <span class="keyword">String</span> <span class="built_in">str</span> = <span class="string">"Hello Chicken"</span>;</span><br><span class="line">        <span class="built_in">char</span>  data[] =  <span class="built_in">str</span>.toCharArray();</span><br><span class="line">        System.out.<span class="built_in">print</span>(data);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//string的字符串转换为char类型数组方法toCharArray（）</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/23/Java基础之string/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/23/Java基础之string/" rel="next" title="Java基础之string">
+                <i class="fa fa-chevron-left"></i> Java基础之string
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/21/今天做了什么/" itemprop="url">
-                  今天做了什么
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-21T16:32:22+08:00" content="2016-02-21">
-              2016-02-21
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>。。。。。。。我也并不清楚我今天做了什么。。。。。。。<br>因为这个博客不是技术性博客，我随便写也没关系吧~（反正没人看~嘿嘿）<br>早上爬起来10：30 ，晚上睡觉每超12点一小时第二天就要在6点的基础上x2小时推迟醒来时间，醒来后还浑身难受。私以为是非常不划算的事（然而我就是想12点以后不睡觉2333）<br>中午去吃饭发现卖盒饭的大叔还没上班。。。整个实验对面街上就那家盒饭能让我留恋，其他的盒饭根本没法比~<br>下午被叫去打lol。。。烬真的很厉害。。。但是一突脸就GG。 刚才抽空在看怎么markdown语法怎么写文章。。。然而一抽风在知乎上找到了怎么加音乐，简直是太棒了~（音乐播放器我只认网易云~）<br>文章这么凌乱，我自己看着都感觉很难受啊23333 晚上去学习好了~去看看java和设计模式，再刷一刷面试题。嗯，就这么愉快的决定了。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=35090300&auto=0&height=66"></iframe>
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
 
-  </section>
-
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -514,6 +362,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -533,8 +385,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -578,6 +439,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是反射（就是反弹呗-）"><span class="nav-number">1.</span> <span class="nav-text">什么是反射（就是反弹呗~）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#反射机制背景概述"><span class="nav-number">1.1.</span> <span class="nav-text">反射机制背景概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反射机制实现功能概述"><span class="nav-number">1.2.</span> <span class="nav-text">反射机制实现功能概述</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Class对象机制与实现"><span class="nav-number">2.</span> <span class="nav-text">Class对象机制与实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Class对象概述"><span class="nav-number">2.1.</span> <span class="nav-text">Class对象概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Class对象的常用方法"><span class="nav-number">2.2.</span> <span class="nav-text">Class对象的常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取类对象的三种方式"><span class="nav-number">2.3.</span> <span class="nav-text">获取类对象的三种方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Field对象的机制与实现"><span class="nav-number">3.</span> <span class="nav-text">Field对象的机制与实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Field对象概述"><span class="nav-number">3.1.</span> <span class="nav-text">Field对象概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Field对象的常用方法"><span class="nav-number">3.2.</span> <span class="nav-text">Field对象的常用方法</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -652,6 +530,167 @@
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
