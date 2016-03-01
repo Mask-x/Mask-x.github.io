@@ -272,8 +272,7 @@
 
       
         
-          
-            <h1 id="什么是反射（就是反弹呗-）"><a href="#什么是反射（就是反弹呗-）" class="headerlink" title="什么是反射（就是反弹呗~）"></a>什么是反射（就是反弹呗~）</h1><h2 id="反射机制背景概述"><a href="#反射机制背景概述" class="headerlink" title="反射机制背景概述"></a>反射机制背景概述</h2><ul>
+          <h1 id="什么是反射（就是反弹呗-）"><a href="#什么是反射（就是反弹呗-）" class="headerlink" title="什么是反射（就是反弹呗~）"></a>什么是反射（就是反弹呗~）</h1><h2 id="反射机制背景概述"><a href="#反射机制背景概述" class="headerlink" title="反射机制背景概述"></a>反射机制背景概述</h2><ul>
 <li>1    Reflection反射，是java被视为动态（或准动态）语言的一个关键性质</li>
 <li>2 反射机制指的是程序在运行时能够获取任何类的内部所有信息</li>
 </ul>
@@ -291,29 +290,11 @@
 <li>3 getDeclaredMethods（）获得类中所有的方法</li>
 <li>4 getConstructors（）获得类构造方法</li>
 <li><p>5 NewInstance（）实例化类对象</p>
-<h2 id="获取类对象的三种方式"><a href="#获取类对象的三种方式" class="headerlink" title="获取类对象的三种方式"></a>获取类对象的三种方式</h2><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Book</span> &#123;</span><br><span class="line">    <span class="keyword">int</span> id;</span><br><span class="line">    String name;</span><br><span class="line">    String type;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span>(<span class="params"><span class="keyword">int</span> id</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span>(<span class="params">String name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getType</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> type;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setType</span>(<span class="params">String type</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.type = type;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>1 使用Class.forName(“具体路径（就是包名+类名）”)</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String[] args</span>) </span>&#123;</span><br><span class="line">        Class demo = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            demo = Class.forName(<span class="string">"Book"</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.<span class="keyword">out</span>.println(demo);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//结果：Class Book</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2 通过类的实例化获取类对象</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String[] args</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        Book book = <span class="keyword">new</span> Book();</span><br><span class="line">        System.<span class="keyword">out</span>.println(book.getClass());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//结果：Class Book     (我忘放包里了2333)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>3 类名.Class直接获取类对象</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String[] args</span>) </span>&#123;</span><br><span class="line">        Class demo = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        demo = Book.class;</span><br><span class="line">        System.<span class="keyword">out</span>.println(demo);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//结果：Class Book</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="Field对象的机制与实现"><a href="#Field对象的机制与实现" class="headerlink" title="Field对象的机制与实现"></a>Field对象的机制与实现</h1><h2 id="Field对象概述"><a href="#Field对象概述" class="headerlink" title="Field对象概述"></a>Field对象概述</h2><ul>
-<li>1 Java.lang.reflect.Field类，适用于表示类中，接口中属性对象的类</li>
-<li>2 可以操作类中私有，以及公有等全部属性和属性信息<h2 id="Field对象的常用方法"><a href="#Field对象的常用方法" class="headerlink" title="Field对象的常用方法"></a>Field对象的常用方法</h2></li>
-<li>1 getName（）获得属性名称</li>
-<li>2 getType（）获得属性类型</li>
-<li>3 get(Object obj)取得obj对象中这个属性的值</li>
-<li>4 set(object obj,Object value)向obj对象中这个属性赋值value</li>
-<li>5 setAccessible(true)启用/禁用访问控制权限 （这个坑我会填上的！不要怕！）</li>
-</ul>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/26/java反射机制/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -555,7 +536,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
